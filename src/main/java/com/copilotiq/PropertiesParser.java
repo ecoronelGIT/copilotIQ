@@ -56,6 +56,7 @@ public class PropertiesParser {
         Matcher m = keyPattern.matcher(value);
         StringBuilder sb = new StringBuilder();
         if (m.find()) {
+            int curPos = 0;
             sb.append(value.substring(curPos, m.start())).append(extractKeyValue(m.group()));
             sb.append(value.substring(m.end()));
         }
@@ -66,11 +67,13 @@ public class PropertiesParser {
     /** Replaces the subst key with its value, if available in {@code props} */
     // TODO: improve javadoc
     private String extractKeyValue(String key) {
-        // TODO: implement
+        //TODO("Not yet implemented");
+        return null;
     }
 
 
     private boolean hasSubstKey(String value) {
-        // TODO: implement
+        //TODO("Not yet implemented");
+        return false;
     }
 }
